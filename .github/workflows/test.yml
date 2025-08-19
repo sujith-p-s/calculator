@@ -1,9 +1,13 @@
-name: Python CI
+name: Test
 
-on: [push]
+on:
+  push:
+      branches:
+        - 'main'
+  pull_request:
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
 
     steps:
